@@ -2,9 +2,10 @@
   "name": "Milestone_recipe_app_backend",
   "version": "1.0.0",
   "description": "hi world",
-  "main": "./bin/www",
+  "main": "./js/server.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./js/server.js",
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
