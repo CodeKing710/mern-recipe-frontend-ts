@@ -3,12 +3,12 @@
  * Sets up the server for the client to use
  * All React component handlers are within the routes
  */
-var express = require('express');
-var app = express();
-var methodOverride = require('method-override');
+const express = require('express');
+const app = express();
+const methodOverride = require('method-override');
 //App settings
+app.set('views', './js/views');
 app.set('view engine', 'jsx');
-app.set('views', './views');
 app.engine('jsx', require('express-react-views').createEngine());
 app.use(express.static('public'));
 app.use(express.json());

@@ -1,7 +1,14 @@
+import { ReactNode } from "react";
+
 const React = require('react');
 const { default: ScriptTag } = require('react-script-tag/lib/ScriptTag');
 
-function PageWrapper (html) {
+interface PageWrapperProps {
+  children: ReactNode;
+  title: ReactNode;
+}
+
+function PageWrapper (html: PageWrapperProps) {
   return (
     <html>
       <head>

@@ -1,18 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const React = require('react');
 const { default: ScriptTag } = require('react-script-tag/lib/ScriptTag');
-
-function PageWrapper (html) {
-  return (
-    <html>
+function PageWrapper(html) {
+    return (<html>
       <head>
         <title>{html.title}</title>
-        <ScriptTag src="./js/main.js" />
+        <ScriptTag src="./js/main.js"/>
       </head>
       <body>
         {html.children}
       </body>
-    </html>
-  );
+    </html>);
 }
-
 module.exports = PageWrapper;

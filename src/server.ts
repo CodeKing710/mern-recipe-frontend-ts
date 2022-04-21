@@ -8,8 +8,8 @@ const app = express();
 const methodOverride = require('method-override');
 
 //App settings
+app.set('views','./js/views');
 app.set('view engine','jsx');
-app.set('views','./views');
 app.engine('jsx',require('express-react-views').createEngine());
 app.use(express.static('public'));
 app.use(express.json());
